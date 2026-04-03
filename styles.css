@@ -122,16 +122,17 @@ h1, h2, h3 {
   color: var(--accent);
 }
 
-.nav-cta {
+.nav-links a.nav-cta {
   background: var(--accent);
-  color: var(--white) !important;
+  color: var(--white);
   padding: .5rem 1.2rem;
   border-radius: 50px;
-  transition: background var(--transition), transform var(--transition) !important;
+  transition: background var(--transition), transform var(--transition);
 }
 
-.nav-cta:hover {
-  background: var(--brown-mid) !important;
+.nav-links a.nav-cta:hover {
+  background: var(--brown-mid);
+  color: var(--white);
   transform: translateY(-1px);
 }
 
@@ -661,8 +662,8 @@ h1, h2, h3 {
 }
 
 .today-row td {
-  color: var(--accent) !important;
-  font-weight: 700 !important;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .map-placeholder {

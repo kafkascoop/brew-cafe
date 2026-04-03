@@ -65,7 +65,6 @@ const dateInput = document.getElementById('date');
 if (dateInput) {
   const today = new Date().toISOString().split('T')[0];
   dateInput.setAttribute('min', today);
-  dateInput.value = today;
 }
 
 // ===== Reservation form =====
@@ -88,5 +87,4 @@ form.addEventListener('submit', (e) => {
   setTimeout(() => notification.classList.remove('show'), 5000);
 
   form.reset();
-  dateInput.value = new Date().toISOString().split('T')[0];
 });
