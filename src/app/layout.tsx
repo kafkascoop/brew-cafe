@@ -21,8 +21,16 @@ export const metadata: Metadata = {
     "Cafe in Rampurhat",
     "Best coffee Rampurhat",
     "Hangout cafe Birbhum",
+    "best coffee shop",
+    "coffee shop",
+    "Best Cafe in Rampurhat",
   ],
+   verification: {
+    google: "R5lsTyzUbe5ErQQoydM9UQLsZPvB0hpq_92492r0JVw",
+  },
 };
+
+
 
 export default function RootLayout({
   children,
