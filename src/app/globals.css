@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #fdfbf7;
+  --foreground: #2d1810;
+  
+  --color-cafe-brown: #3e2723;
+  --color-cafe-beige: #d7ccc8;
+  --color-cafe-cream: #efebe9;
+  --color-cafe-orange: #ff8a65;
+  --color-cafe-accent: #d84315;
+}
+
+.dark {
+  --background: #1a1210;
+  --foreground: #efebe9;
+  --color-cafe-brown: #8d6e63;
+  --color-cafe-beige: #4e342e;
+  --color-cafe-cream: #3e2723;
+  --color-cafe-orange: #ffab91;
+  --color-cafe-accent: #ff5722;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cafe-brown: var(--color-cafe-brown);
+  --color-cafe-beige: var(--color-cafe-beige);
+  --color-cafe-cream: var(--color-cafe-cream);
+  --color-cafe-orange: var(--color-cafe-orange);
+  --color-cafe-accent: var(--color-cafe-accent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: inherit;
+}

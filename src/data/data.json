@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "title": "Brew Café",
+    "tagline": "A perfectly crafted experience in every cup.",
+    "slides": [
+      "/images/interior1.jpeg",
+      "/images/interior4.jpeg",
+      "/images/coffe1.jpeg"
+    ]
+  },
+  "features": [
+    {
+      "icon": "Wallet",
+      "title": "Budget Friendly Pricing",
+      "description": "Premium taste without breaking the bank."
+    },
+    {
+      "icon": "Heart",
+      "title": "Chill Vibes & Great Atmosphere",
+      "description": "A place where good mood meets great coffee."
+    },
+    {
+      "icon": "MapPin",
+      "title": "Best Hangout Spot in Rampurhat",
+      "description": "A cozy place for friends, couples, and college students."
+    }
+  ],
+  "about": {
+    "title": "Our Story",
+    "content": "Welcome to Brew Café, Rampurhat's favorite spot for freshly brewed coffee, tasty bites, and unforgettable memories. We built this space with one simple idea: to provide a warm, comfortable, and affordable place where the community can come together. Whether you are catching up with friends, working on a project, or simply enjoying a quiet cup of coffee, Brew Café is your home away from home."
+  },
+  "menu": {
+    "categories": ["Coffee", "Snacks", "Combos"],
+    "items": [
+      {
+        "id": 1,
+        "name": "Classic Espresso",
+        "category": "Coffee",
+        "price": "₹60",
+        "image": "/images/coffe2.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Cappuccino",
+        "category": "Coffee",
+        "price": "₹90",
+        "image": "/images/coffe3.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Iced Latte",
+        "category": "Coffee",
+        "price": "₹110",
+        "image": "/images/coffe4.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Mocha Frappuccino",
+        "category": "Coffee",
+        "price": "₹130",
+        "image": "/images/coffe6.jpeg"
+      },
+      {
+        "id": 5,
+        "name": "Cheesy Burger",
+        "category": "Snacks",
+        "price": "₹80",
+        "image": "/images/burger1.jpeg"
+      },
+      {
+        "id": 6,
+        "name": "Grilled Sandwich",
+        "category": "Snacks",
+        "price": "₹70",
+        "image": "/images/sandwitch1.jpeg"
+      },
+      {
+        "id": 7,
+        "name": "Classic Mocktail",
+        "category": "Snacks",
+        "price": "₹90",
+        "image": "/images/mocktail2.jpeg"
+      },
+      {
+        "id": 8,
+        "name": "Burger Combo Meal",
+        "category": "Combos",
+        "price": "₹180",
+        "image": "/images/burgermeal1.jpeg"
+      },
+      {
+        "id": 9,
+        "name": "Coffee & Sandwich",
+        "category": "Combos",
+        "price": "₹140",
+        "image": "/images/moctail3.jpeg"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Aman S.",
+      "rating": 5,
+      "review": "Best coffee in Rampurhat! Prices are great for students, and the vibe is totally unmatched."
+    },
+    {
+      "id": 2,
+      "name": "Priya D.",
+      "rating": 5,
+      "review": "Loved the ambiance and the cheesy burger is a must-try. Such a cozy spot to chill."
+    },
+    {
+      "id": 3,
+      "name": "Rohan M.",
+      "rating": 4,
+      "review": "Fast WiFi and good food. Really nice place to sit down with a laptop and work peacefully."
+    }
+  ],
+  "gallery": [
+    "/images/interior6.jpeg",
+    "/images/burger1.jpeg",
+    "/images/coffe3.jpeg",
+    "/images/kocktail.jpeg",
+    "/images/interior5.jpeg",
+    "/images/mocktain5.jpeg"
+  ],
+  "offers": {
+    "title": "Flat 10% Off for Students",
+    "description": "Show your college or school ID at the counter and get a flat 10% discount on all food items and combos!"
+  },
+  "contact": {
+    "address": "JL Banerjee Rd, sanghata para, Rampurhat, West Bengal 731224",
+    "phone": "093395 37315",
+    "openingHours": {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1939.8596174724953!2d87.7848762107539!3d24.168842741550357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa1f475c134847%3A0x7756136f1a256a1!2sBrew%20Cafe!5e0!3m2!1sen!2sin!4v1775253157107!5m2!1sen!2sin",
+    "social": {
+      "instagram": "https://instagram.com/brewcaferampurhat",
+      "google": "https://g.page/brewcaferampurhat"
+    }
+  }
+}
