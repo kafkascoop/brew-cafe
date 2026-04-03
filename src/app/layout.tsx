@@ -13,8 +13,15 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Brew Café | Where Conversations Brew",
-  description: "Brew Café is Rampurhat's favorite spot for freshly brewed coffee, tasty bites, and unforgettable memories.",
+  title: "Brew Café | Best Café in Rampurhat",
+  description:
+    "Visit Brew Café in Rampurhat for freshly brewed coffee, delicious snacks, and a perfect hangout experience.",
+  keywords: [
+    "Brew Café",
+    "Cafe in Rampurhat",
+    "Best coffee Rampurhat",
+    "Hangout cafe Birbhum",
+  ],
 };
 
 export default function RootLayout({
