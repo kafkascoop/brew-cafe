@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew Café — Specialty coffee, fresh pastries, and a cozy atmosphere in the heart of the city." />
+  <title>Brew Café — Great Coffee, Greater Moments</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo" aria-label="Brew Café home">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 21h18v-2H2v2zM20 8H4v5a6 6 0 006 6h4a6 6 0 006-6V8zM4 6h16V4H4v2zm8-4C7.6 2 4 5.6 4 10v1h16v-1c0-4.4-3.6-8-8-8z"/>
+      </svg>
+      Brew Café
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Reserve a Table</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Est. 2012 · Specialty Coffee</div>
+        <h1>Crafted with<br><em>Love & Beans</em></h1>
+        <p class="hero-desc">
+          Handpicked single-origin beans, expertly roasted and brewed to perfection.
+          Your perfect cup is waiting.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn btn-outline">Reserve a Table</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Signature Drinks</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Happy Regulars</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap" aria-hidden="true">
+        <div class="hero-cup">
+          <!-- Inline SVG illustration of a coffee cup -->
+          <svg viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+            <!-- Steam -->
+            <path d="M120 60 Q115 40 125 20 Q135 0 130 -20" stroke="#c8956c" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+            <path d="M160 55 Q155 35 165 15 Q175 -5 170 -25" stroke="#c8956c" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+            <path d="M200 60 Q195 40 205 20 Q215 0 210 -20" stroke="#c8956c" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+            <!-- Saucer -->
+            <ellipse cx="160" cy="310" rx="140" ry="22" fill="#8B5E3C"/>
+            <ellipse cx="160" cy="304" rx="120" ry="16" fill="#a0714f"/>
+            <!-- Cup body -->
+            <path d="M60 120 Q55 290 160 298 Q265 290 260 120 Z" fill="#c8956c"/>
+            <path d="M60 120 Q55 290 160 298 Q265 290 260 120 Z" fill="url(#cupGrad)"/>
+            <!-- Cup top rim -->
+            <ellipse cx="160" cy="118" rx="100" ry="18" fill="#d4a57a"/>
+            <!-- Coffee surface -->
+            <ellipse cx="160" cy="118" rx="90" ry="14" fill="#3b1f0e"/>
+            <!-- Latte art swirl -->
+            <path d="M140 110 Q160 95 180 110 Q165 125 145 118 Q155 108 165 115" stroke="#c8956c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Handle -->
+            <path d="M258 160 Q310 160 310 210 Q310 260 258 260" stroke="#a0714f" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <path d="M258 160 Q298 160 298 210 Q298 260 258 260" stroke="#c8956c" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <!-- Shine -->
+            <path d="M85 140 Q95 130 90 175" stroke="rgba(255,255,255,0.3)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="cupGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="rgba(59,31,14,0.2)"/>
+                <stop offset="50%" stop-color="rgba(255,255,255,0.05)"/>
+                <stop offset="100%" stop-color="rgba(59,31,14,0.3)"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Feature strip ===== -->
+  <div class="features" aria-label="Our promises">
+    <div class="features-inner">
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21H5.71C6.66 19 7.66 17.25 9 16C11.07 18.07 14 19 17 19C20.87 19 24 15.87 24 12C24 8 21 4 17 8ZM7 14C7 14 5 13 5 11C5 8.79 6.79 7 9 7C10.93 7 12.57 8.3 13 10.08C12.36 10.3 11.75 10.6 11.19 10.96C10.97 9.82 9.1 9 9 11C9 12 9.5 13 7 14Z"/></svg>
+        <span>Freshly Roasted Daily</span>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"/></svg>
+        <span>Open 7 Days a Week</span>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z"/></svg>
+        <span>Ethically Sourced Beans</span>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 12.28 5.4 15.36 10.55 20.04L12 21.35L13.45 20.03C18.6 15.36 22 12.28 22 8.5C22 5.42 19.58 3 16.5 3ZM12.1 18.55L12 18.65L11.9 18.55C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5C9.04 5 10.54 5.99 11.07 7.36H12.94C13.46 5.99 14.96 5 16.5 5C18.5 5 20 6.5 20 8.5C20 11.39 16.86 14.24 12.1 18.55Z"/></svg>
+        <span>Made with Passion</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Menu ===== -->
+  <section class="section menu" id="menu">
+    <div class="section-inner">
+      <div class="menu-header">
+        <span class="section-label">What We Serve</span>
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-sub">Every item on our menu is crafted with care, using the finest ingredients sourced locally and globally.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab-btn" data-filter="coffee" role="tab" aria-selected="false">Coffee</button>
+        <button class="tab-btn" data-filter="tea" role="tab" aria-selected="false">Tea & More</button>
+        <button class="tab-btn" data-filter="food" role="tab" aria-selected="false">Food</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- Coffee items -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-emoji" aria-hidden="true">☕</div>
+          <h3 class="menu-card-title">Signature Espresso</h3>
+          <p class="menu-card-desc">Double shot of our house-blended espresso, rich and bold with a velvety crema.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$3.50</span>
+            <span class="menu-tag popular">Popular</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-emoji" aria-hidden="true">🥛</div>
+          <h3 class="menu-card-title">Oat Milk Latte</h3>
+          <p class="menu-card-desc">Smooth espresso poured over creamy oat milk, finished with delicate latte art.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.50</span>
+            <span class="menu-tag popular">Popular</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-emoji" aria-hidden="true">🧊</div>
+          <h3 class="menu-card-title">Cold Brew</h3>
+          <p class="menu-card-desc">Steeped for 18 hours in cold water, silky smooth with natural sweetness.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.00</span>
+            <span class="menu-tag">Seasonal</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-emoji" aria-hidden="true">🍯</div>
+          <h3 class="menu-card-title">Honey Flat White</h3>
+          <p class="menu-card-desc">Microfoam milk meets a double ristretto and a touch of local wildflower honey.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.75</span>
+            <span class="menu-tag popular">Popular</span>
+          </div>
+        </div>
+
+        <!-- Tea items -->
+        <div class="menu-card" data-category="tea">
+          <div class="menu-emoji" aria-hidden="true">🍵</div>
+          <h3 class="menu-card-title">Matcha Latte</h3>
+          <p class="menu-card-desc">Ceremonial-grade Japanese matcha whisked with steamed oat milk and a hint of vanilla.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$6.00</span>
+            <span class="menu-tag popular">Popular</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="tea">
+          <div class="menu-emoji" aria-hidden="true">🧋</div>
+          <h3 class="menu-card-title">Chai Spice Latte</h3>
+          <p class="menu-card-desc">House-made masala chai blend with cinnamon, cardamom, ginger, and steamed milk.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$5.50</span>
+            <span class="menu-tag">New</span>
+          </div>
+        </div>
+
+        <!-- Food items -->
+        <div class="menu-card" data-category="food">
+          <div class="menu-emoji" aria-hidden="true">🥐</div>
+          <h3 class="menu-card-title">Butter Croissant</h3>
+          <p class="menu-card-desc">Flaky, golden, and baked fresh every morning. Best enjoyed warm.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$3.75</span>
+            <span class="menu-tag popular">Popular</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="food">
+          <div class="menu-emoji" aria-hidden="true">🍰</div>
+          <h3 class="menu-card-title">Cardamom Coffee Cake</h3>
+          <p class="menu-card-desc">Moist, fragrant, with a crunchy streusel topping. A Brew Café signature.</p>
+          <div class="menu-card-footer">
+            <span class="menu-price">$4.50</span>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about">
+    <div class="section-inner about-inner">
+      <div class="about-image-wrap">
+        <div class="about-img-main" role="img" aria-label="Barista crafting coffee">
+          ☕
+        </div>
+        <div class="about-img-badge">
+          <span>12+</span>
+          Years<br>of Craft
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">More Than Just Coffee</h2>
+        <p class="section-sub">
+          Brew Café started in 2012 with a simple dream — to create a space where great coffee meets
+          genuine community. What began as a tiny corner shop has grown into a beloved neighbourhood
+          institution, but our values have never changed.
+        </p>
+
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🌍</div>
+            <div class="value-text">
+              <h4>Ethically Sourced</h4>
+              <p>We work directly with farmers across Ethiopia, Colombia, and Guatemala, paying fair prices and building long-term relationships.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🔥</div>
+            <div class="value-text">
+              <h4>Roasted In-House</h4>
+              <p>Our master roaster brings out each bean's unique characteristics in small, precise batches every single morning.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🌱</div>
+            <div class="value-text">
+              <h4>Sustainability First</h4>
+              <p>From compostable cups to solar-assisted energy, we're committed to leaving a lighter footprint.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary" style="margin-top: 2rem; display: inline-flex;">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-inner">
+      <span class="section-label">What People Say</span>
+      <h2 class="section-title">Loved by Our Community</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">"Best oat milk latte I've ever had — and I've tried them everywhere. The latte art alone is worth the trip."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">👩</div>
+            <div>
+              <div class="author-name">Sophia R.</div>
+              <div class="author-since">Regular since 2019</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">"Brew Café is my office away from the office. The atmosphere is perfect for focused work, and the cold brew keeps me going."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">👨</div>
+            <div>
+              <div class="author-name">Marcus T.</div>
+              <div class="author-since">Regular since 2021</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">"The cardamom coffee cake pairs so well with their espresso. I literally dream about it. An absolute neighbourhood gem."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">👩</div>
+            <div>
+              <div class="author-name">Amara K.</div>
+              <div class="author-since">Regular since 2017</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Hours & Location ===== -->
+  <section class="section hours" id="hours">
+    <div class="section-inner hours-inner">
+      <div>
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">Hours & Location</h2>
+
+        <table class="hours-table" aria-label="Opening hours">
+          <tbody>
+            <tr>
+              <td>Monday – Friday</td>
+              <td>7:00 AM – 8:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 AM – 9:00 PM</td>
+            </tr>
+            <tr class="today-row">
+              <td>Sunday</td>
+              <td>9:00 AM – 7:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="contact-item" style="margin-top: 2rem;">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>42 Bean Street, Roast Quarter<br>Portland, OR 97201</p>
+          </div>
+        </div>
+
+        <div class="contact-item" style="margin-top: 1rem;">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+15035550123">(503) 555-0123</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-placeholder" role="complementary" aria-label="Location map placeholder">
+        <div class="map-icon" aria-hidden="true">🗺️</div>
+        <h3>42 Bean Street</h3>
+        <p>Roast Quarter, Portland, OR 97201</p>
+        <a href="https://maps.google.com/?q=Portland+OR" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="display: inline-flex; margin: 0 auto;">
+          Get Directions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="section-inner contact-inner">
+      <div>
+        <span class="section-label">Say Hello</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-sub">Whether you want to book a table, ask about catering, or just say hi — we'd love to hear from you.</p>
+
+        <div class="contact-info" style="margin-top: 2.5rem;">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@brewcafe.com">hello@brewcafe.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📱</div>
+            <div>
+              <h4>Instagram</h4>
+              <p><a href="https://instagram.com/brewcafe" target="_blank" rel="noopener noreferrer">@brewcafe</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">🎉</div>
+            <div>
+              <h4>Private Events</h4>
+              <p>We host private tastings, workshops, and team events. <a href="mailto:events@brewcafe.com">events@brewcafe.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Reserve a Table</h3>
+        <form id="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="firstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select…</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5+">5+ people</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Special Requests (optional)</label>
+            <textarea id="message" name="message" placeholder="Dietary requirements, occasion, etc."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Book My Table ☕</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Brew Café home">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 21h18v-2H2v2zM20 8H4v5a6 6 0 006 6h4a6 6 0 006-6V8zM4 6h16V4H4v2zm8-4C7.6 2 4 5.6 4 10v1h16v-1c0-4.4-3.6-8-8-8z"/>
+            </svg>
+            Brew Café
+          </a>
+          <p>Your neighbourhood specialty coffee shop — crafting great moments, one cup at a time since 2012.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="https://instagram.com/brewcafe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com/brewcafe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">👍</a>
+            <a href="https://twitter.com/brewcafe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#menu">Coffee</a></li>
+            <li><a href="#menu">Tea & More</a></li>
+            <li><a href="#menu">Food</a></li>
+            <li><a href="#menu">Seasonal Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <ul>
+            <li><a href="#hours">Opening Hours</a></li>
+            <li><a href="#hours">Find Us</a></li>
+            <li><a href="#contact">Reservations</a></li>
+            <li><a href="mailto:events@brewcafe.com">Private Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#about">Sustainability</a></li>
+            <li><a href="mailto:hello@brewcafe.com">Contact</a></li>
+            <li><a href="#about">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024 Brew Café. All rights reserved.</span>
+        <span>Made with ☕ in Portland, OR</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification -->
+  <div class="notification" id="notification" role="alert" aria-live="polite">
+    <span class="notification-icon" aria-hidden="true">✅</span>
+    <span id="notification-text">Table reserved! We'll be in touch soon.</span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
