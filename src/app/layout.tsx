@@ -37,6 +37,24 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans transition-colors duration-300">
         <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      name: "Brew Café",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Rampurhat",
+        addressRegion: "West Bengal",
+        addressCountry: "India",
+      },
+      servesCuisine: "Coffee, Snacks",
+      priceRange: "₹₹",
+    }),
+  }}
+/>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               try {
