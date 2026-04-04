@@ -9,8 +9,8 @@ import About from "@/components/About";
 import Menu from "@/components/Menu";
 import Reviews from "@/components/Reviews";
 import Gallery from "@/components/Gallery";
-import Offers from "@/components/Offers";
-import LocationContact from "@/components/LocationContact";
+import Statistics from "@/components/Statistics";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 
@@ -31,8 +31,8 @@ export default function Home() {
         <Menu data={data.menu} />
         <Reviews data={data.reviews} />
         <Gallery data={data.gallery} />
-        <Offers data={data.offers} />
-        <LocationContact data={data.contact} />
+        <Statistics />
+        <ContactSection data={data.contact} />
       </main>
       
       <Footer data={{ social: data.contact.social }} />

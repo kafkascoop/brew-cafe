@@ -31,6 +31,25 @@
   --color-cafe-cream: var(--color-cafe-cream);
   --color-cafe-orange: var(--color-cafe-orange);
   --color-cafe-accent: var(--color-cafe-accent);
+  --animate-call-bounce: call-bounce 5s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+}
+
+@keyframes call-bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(6px);
+  }
+  88% {
+    transform: translateY(-4px);
+  }
+  92% {
+    transform: translateY(2px);
+  }
+  96% {
+    transform: translateY(-1px);
+  }
 }
 
 html {
